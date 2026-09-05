@@ -12,6 +12,10 @@ h1, h2, h3, h4, h5, h6, span {
     line-height: 1.25;
 }
 
+h1 {
+  font-size: 36px;
+}
+
 p{
   line-height: 1.5;
   font-size: 16px;
@@ -33,6 +37,10 @@ li {
   width: 100%;
   max-width: 800px;
   margin: 0 auto;
+}
+
+.text--purple {
+  color: #6030b1;
 }
 
 /* NAVIGATION BAR */
@@ -108,4 +116,5 @@ nav {
   /*Improving my own picture */
   transform: scale(1.2);
   padding-top: 1px;
+  object-position: 40%;
 }
