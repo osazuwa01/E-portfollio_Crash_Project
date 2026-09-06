@@ -93,6 +93,12 @@ nav {
   flex-direction: column;
 }
 
+.about-me__info {
+  display: flex;
+  flex-direction: column;
+  padding: 50px 0;
+}
+
 .about-me__info--container {
   display: flex;
   flex-direction: column;
@@ -136,4 +142,15 @@ nav {
   color: #242424;
   text-decoration: none;
   padding: 0 8px;
+}
+
+.about-me__img--container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex: 1;
+}
+
+.about-me__img {
+  width: 100%;
 }
