@@ -257,3 +257,17 @@ nav {
   padding-top: 40px;
   border-radius: 0%;
 }
+
+.project__description {
+  position: absolute;
+  top: 50%;
+  left: 350px;
+  max-width: 1000px;
+  transform: translate(-50%);
+}
+
+.project__description--title,
+.project__description--sub-title {
+  text-align: left;
+  color: #fff;
+}
