@@ -304,3 +304,13 @@ nav {
   text-align: left;
   color: #fff;
 }
+
+/* FOOTER */
+
+.footer__logo--img {
+  position: absolute;
+  width: 500px;
+  height: 500px;
+  object-fit: cover;
+  object-position: right;
+}
