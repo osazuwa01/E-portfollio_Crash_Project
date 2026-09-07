@@ -307,10 +307,15 @@ nav {
 
 /* FOOTER */
 
+footer {
+  background-color: #242424;
+}
+
+.footer__row {
+  padding: 3% 0;
+}
+
 .footer__logo--img {
-  position: absolute;
-  width: 500px;
-  height: 500px;
-  object-fit: cover;
-  object-position: right;
+  width: 70px;
+  height: 70px;
 }
