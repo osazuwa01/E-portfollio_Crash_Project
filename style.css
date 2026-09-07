@@ -218,6 +218,14 @@ nav {
 
 /* PROJECTS */
 
+.project {
+  margin-bottom: 135px;
+}
+
+.project:last-child {
+  margin-bottom: 40px;
+}
+
 .project__img {
   width: 100%;
   transition: all 500ms ease;
@@ -240,7 +248,7 @@ nav {
   height: 100%;
   background-color: #1c1d25;
   opacity: 0;
-  transition: opacity 450 ease;
+  transition: opacity 450ms ease;
   z-index: 2;
 }
 
@@ -266,13 +274,12 @@ nav {
 .project__description {
   position: absolute;
   top: 50%;
-  right: 60px;
-  left: auto;
+  left: 60px;
   max-width: 550px;
   z-index: 3;
   opacity: 0;
   transform: translateY(100%);
-  transition: transform 450ms, opacity 300ms;
+  transition: transform 450ms ease, opacity 300ms ease;
 }
 
 .project__description--title {
@@ -282,14 +289,14 @@ nav {
 }
 
 .project__description--sub-title {
-  margin: 16px; 
+  margin: 12px 0; 
   color: white;
   text-align: left;
 }
 
 .project__description--link{
   font-size: 20px;
-  margin: 16px;
+  margin: 16;
 }
 
 .project__description--para, 
