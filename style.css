@@ -312,6 +312,9 @@ footer {
 }
 
 .footer__row {
+  display: flex;
+  flex-direction: columnal;
+  align-items: center;
   padding: 8% 0;
 }
 
