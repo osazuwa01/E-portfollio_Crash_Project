@@ -253,6 +253,11 @@ nav {
   filter: blur(5px);
 }
 
+.project:hover .project__description {
+  opacity: 1;
+  transform: translateY(-50%);
+}
+
 .project__list {
   padding-top: 40px;
   border-radius: 0%;
@@ -261,18 +266,25 @@ nav {
 .project__description {
   position: absolute;
   top: 50%;
-  left: 300px;
-  transform: translate(-50%);
+  right: 60px;
+  left: auto;
   max-width: 550px;
   z-index: 3;
+  opacity: 0;
+  transform: translateY(100%);
+  transition: transform 450ms, opacity 300ms;
 }
 
 .project__description--title {
   font-size: 40px;
+  color: white;
+  text-align: left;
 }
 
 .project__description--sub-title {
   margin: 16px; 
+  color: white;
+  text-align: left;
 }
 
 .project__description--link{
