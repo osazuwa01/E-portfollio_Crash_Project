@@ -30,17 +30,21 @@ a {
   position: relative;
 }
 
-.link__hover-effect:after {
+.link__hover-effect::after {
   content: "";
   position: absolute;
   height: 3px;
-  background-color: black;
   width: 0%;
   bottom: -3px;
-  left: 0;
+  right: 0;
+  transition: width 300ms ease;
 }
 
-.link__hover-effect:hover:after {
+.link__hover-effect--white::after {
+  background-color: #fff
+}
+
+.link__hover-effect:hover::after {
   width: 100%;
 }
 
@@ -359,7 +363,6 @@ footer {
 .footer__copyright,
 .footer__logo--popper {
   color: #fff;
-  text-decoration: none;
 }
 
 .footer__logo--popper {
