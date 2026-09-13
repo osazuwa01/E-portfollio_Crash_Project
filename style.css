@@ -44,6 +44,10 @@ a {
   background-color: #fff
 }
 
+.link__hover-effect--black::after {
+  background-color: #000;
+}
+
 .link__hover-effect:hover::after {
   width: 100%;
 }
@@ -68,6 +72,7 @@ li {
   width: 100%;
   max-width: 800px;
   margin: 0 auto;
+  padding: 0 12px;
 }
 
 .text--purple {
@@ -92,6 +97,7 @@ nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  padding: 0 12px;
 }
 
 .nav__link--list {
@@ -173,7 +179,8 @@ nav {
   width: 90%;
   max-width: 600px;
   text-align: center;
-  margin-bottom: 20px;
+  margin-bottom: 28px;
+  font-size: 20px;
 }
 
 .about-me__link {
@@ -224,6 +231,7 @@ nav {
 
 .language__list {
   display: flex;
+  justify-content: center;
   width: 100%;
   flex-wrap: wrap;
 }
@@ -387,4 +395,39 @@ footer {
   transform: translateX(0) translateY(-50%);
   left: 100%;
   opacity: 1;
+}
+
+/* Small phones, tables, large smartphones */
+@media (max-width: 768px) {
+  nav {
+    height: 68px;
+  }
+
+  h1 {
+    font-size: 28px;
+  }
+
+  .about-me__info--para {
+    font-size: 18px;
+  }
+
+  .language {
+    width: calc(100% / 2);
+  }
+
+  .project__description--para {
+    font-size: 14px;
+    align-items: center;
+  }
+
+  .project__description {
+    left: 30px;
+  }
+}
+
+/* SMALL PHONE */
+@media (max-width: 480px) {
+  .nav__link:not(:last-child) {
+    display: none;
+  }
 }
