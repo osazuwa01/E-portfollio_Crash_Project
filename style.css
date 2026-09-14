@@ -431,6 +431,8 @@ footer {
 
   .project__description {
     left: 30px;
+    right: 30px;
+    max-width: none;
   }
 }
 
@@ -440,7 +442,29 @@ footer {
     display: none;
   }
 
+  .project__description {
+    padding: 0;
+    left: 0;
+    width: 100%;
+  }
+
   .project__description--para {
     display: none;
+  }
+
+  .project__description--links {
+    display: flex;
+    justify-content: center;
+  }
+
+  .project__description--title {
+    text-align: center;
+    line-height: 1;
+    font-size: 32px;
+  }
+
+  .project__description--sub-title {
+    text-align: center;
+    margin: 12px 0;
   }
 }
