@@ -34,6 +34,11 @@ p {
 a {
   text-decoration: none;
   position: relative;
+  transition: opacity 300ms ease;
+}
+
+i:hover {
+  opacity: 0.7;
 }
 
 .link__hover-effect::after {
@@ -250,7 +255,7 @@ nav {
 
 .wave {
   display: inline-block;
-  animation: animation-wave 500ms infinite;
+  animation: animation-wave 500ms infinite ease-in-out;
 }
 
 @keyframes animation-wave {
